@@ -60,7 +60,7 @@
 
     .article {
       flex:  1 0 15rem;
-      padding:  0.5rem;
+      padding:  0.3rem;
       position: relative;
     }
 
@@ -70,10 +70,12 @@
       padding: 0.5rem;
       position: absolute;
       top: 2rem;
+      color:  white;
     }
 
-    h4:not(::first-line) {
-      opacity:  0.7;
+    h4::first-line {
+      background-color: white;
+      color: black;
     }
 
     em{
@@ -93,12 +95,13 @@
       height:  13rem;
       object-fit: cover;
       vertical-align: bottom;
-      margin-bottom:  0.5rem;
+
       background-color:  #F44336;
       -webkit-background-blend-mode: multiply;
       background-blend-mode: multiply;
       -webkit-filter:  greyscale(100%);
       filter:  greyscale(100%);
+      background-size:  cover;
     }
 
     time {
@@ -106,7 +109,8 @@
       opacity: 1;
       font-weight: 700;
       position: absolute;
-      bottom: 1rem;
+      top: 0;
+      right:  0;
       background: black;
       color: white;
       padding: 0.2rem 0.5rem;
