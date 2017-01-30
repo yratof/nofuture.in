@@ -2,6 +2,11 @@
   <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Quando" rel="stylesheet">
   <title>No future in:</title>
   <style>
+
+    * {
+      box-sizing: border-box;
+    }
+
     body{
       font-family: 'Quando', serif;
       margin: 0;
@@ -59,17 +64,29 @@
     }
 
     em{
-      background-color:  #F44336;
-      color:  white;
+      background-color: #F44336;
+      color: white;
+      padding: 0.2rem 0.7rem;
+      font-size: 0.7rem;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 1.5;
+      position: absolute;
     }
 
-    img{
+    span.image {
       display:  block;
       width:  100%;
       height:  13rem;
       object-fit: cover;
       vertical-align: bottom;
       margin-bottom:  0.5rem;
+      background-color:  #F44336;
+      -webkit-background-blend-mode: multiply;
+      background-blend-mode: multiply;
+      -webkit-filter:  greyscale(100%);
+      filter:  greyscale(100%);
+
     }
   </style>
 
@@ -84,7 +101,7 @@
       <!-- -->
       <div class="article">
         <em>Art</em>
-        <img src="https://unsplash.it/300/400?random&r=1" />
+        <span class="image" style="background-image:url('https://unsplash.it/300/400?random&r=1')"></span>
         <h4>A mysterious title</h4>
         <time>Monday 30th January 2017</time>
       </div>
@@ -92,7 +109,7 @@
       <!-- -->
       <div class="article">
         <em>Art</em>
-        <img src="https://unsplash.it/300/400?random&r=2" />
+        <span class="image" style="background-image:url('https://unsplash.it/300/400?random&r=2')"></span>
         <h4>A mysterious title</h4>
         <time>Monday 30th January 2017</time>
       </div>
@@ -100,7 +117,7 @@
       <!-- -->
       <div class="article">
         <em>Art</em>
-        <img src="https://unsplash.it/300/400?random&r=3" />
+        <span class="image" style="background-image:url('https://unsplash.it/300/400?random&r=3')"></span>
         <h4>A mysterious title</h4>
         <time>Monday 30th January 2017</time>
       </div>
@@ -108,7 +125,7 @@
       <!-- -->
       <div class="article">
         <em>Art</em>
-        <img src="https://unsplash.it/300/400?random&r=4" />
+        <span class="image" style="background-image:url('https://unsplash.it/300/400?random&r=4')"></span>
         <h4>A mysterious title</h4>
         <time>Monday 30th January 2017</time>
       </div>
@@ -116,7 +133,7 @@
       <!-- -->
       <div class="article">
         <em>Art</em>
-        <img src="https://unsplash.it/300/400?random&r=5" />
+        <span class="image" style="background-image:url('https://unsplash.it/300/400?random&r=5')"></span>
         <h4>A mysterious title</h4>
         <time>Monday 30th January 2017</time>
       </div>
@@ -124,7 +141,7 @@
       <!-- -->
       <div class="article">
         <em>Art</em>
-        <img src="https://unsplash.it/300/400?random&r=6" />
+        <span class="image" style="background-image:url('https://unsplash.it/300/400?random&r=6')"></span>
         <h4>A mysterious title</h4>
         <time>Monday 30th January 2017</time>
       </div>
@@ -132,7 +149,7 @@
       <!-- -->
       <div class="article">
         <em>Art</em>
-        <img src="https://unsplash.it/300/400?random&r=7" />
+        <span class="image" style="background-image:url('https://unsplash.it/300/400?random&r=7')"></span>
         <h4>A mysterious title</h4>
         <time>Monday 30th January 2017</time>
       </div>
