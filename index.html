@@ -69,6 +69,20 @@
       position: relative;
     }
 
+    .article:nth-of-type(5n-3) span.image {
+      background-color:  #FFC107;
+    }
+
+    .article:nth-of-type(8n-2) span.image {
+      -webkit-filter:  grayscale(100%);
+      filter:  grayscale(100%);
+    }
+
+    .article:nth-of-type(5n-3) {
+      flex: 1 0 50%;
+      padding: 0.3rem 1rem;
+    }
+
     h4 {
       margin: 0;
       font-size: 2rem;
@@ -106,8 +120,6 @@
       background-color:  #F44336;
       -webkit-background-blend-mode: multiply;
       background-blend-mode: multiply;
-      -webkit-filter:  greyscale(100%);
-      filter:  greyscale(100%);
       background-size:  cover;
     }
 
