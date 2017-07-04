@@ -1,280 +1,74 @@
 <head>
-  <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Quando" rel="stylesheet">
-  <title>No future in:</title>
+  <title>No future in | Game studio</title>
+  <link href="https://fonts.googleapis.com/css?family=Caesar+Dressing" rel="stylesheet">
   <style>
 
-    * {
-      box-sizing: border-box;
-    }
+  @font-face { font-family: body; src: url(book.woff2); font-weight: 400; }
+  @font-face { font-family: body; src: url(sem.woff2); font-weight: 600; }
 
-    body{
-      font-family: 'Quando', serif;
-      margin: 0;
-      padding: 0;
-      line-break: 1.5;
-    }
+  body {
+    background: #3023ae;
+    background: -moz-linear-gradient(45deg, #3023ae 0%, #c96dd8 100%);
+    background: -webkit-linear-gradient(45deg, #3023ae 0%,#c96dd8 100%);
+    background: linear-gradient(45deg, #3023ae 0%,#c96dd8 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3023ae', endColorstr='#c96dd8',GradientType=1 );
+    font-family: body, sans-serif;
+    font-weight: 400;
+    letter-spacing: 0;
+    padding: 4vw;
+  }
 
-    .plain {
-      margin: 2rem 0;
-      display: inline-block;
-      padding-left: 20rem;
-      width: 90%;
-    }
+  * { box-sizing: border-box; }
+  *, h1,h2,h3,h4,h5,h6 { margin: 0; padding: 0; }
 
-    p {
-      font-family: 'Quando', serif;
-      font-size:  1.125rem;
-    }
+  .hero {
+    font-size: 144pt;
+    font-size: 11vw;
+    font-size: 13vmin;
+    font-family: 'Caesar Dressing', cursive;
+    color: white;
+  }
 
-    .opening {
-      padding: 2rem 0 4rem;
-    }
+  .sub-hero {
+    font-family: body;
+    font-weight: 600;
+    font-size: 64pt;
+    font-size: 3vw;
+    font-size: 5vmin;
+    color: white;
+    margin-bottom: 1vmax;
+  }
 
-    h1,h2,h3,h4,h5 {
-      font-family: 'Abril Fatface', cursive;
-      font-weight: 400;
+  .foreword {
+    font-size: 16pt;
+    font-size: 3vmin;
+    color: white;
+    font-weight: 400;
+  }
 
-    }
-
-    h1{
-      font-family: 'Abril Fatface', cursive;
-      font-weight: 400;
-      font-size: 3rem;
-      margin:  0;
-      position: fixed;
-      top:  2rem;
-      left:  2rem;
-      width:  11rem;
-      border-right: 5px solid black;
-    }
-
-    h1 strong{
-      font-weight: 400;
-      font-family: 'Quando', serif;
-      color: #F44336;
-      box-shadow:  inset 0 -5px 0px 0px #F44336;
-    }
-
-    .flex {
-      display:  flex;
-      flex-wrap:  wrap;
-      flex-direction:  row;
-      justify-content: space-between;
-    }
-
-    .article {
-      flex:  1 0 15rem;
-      padding:  0.3rem 3rem;
-      margin-bottom: 3rem;
-      position: relative;
-    }
-
-    .article:nth-of-type(5n-3) span.image {
-      background-color:  #FFC107;
-    }
-
-    .article:nth-of-type(8n-2) span.image {
-      -webkit-filter:  grayscale(100%);
-      filter:  grayscale(100%);
-    }
-
-    .article:nth-of-type(5n-3) {
-      flex: 1 0 50%;
-      padding: 0.3rem 1rem;
-    }
-
-    h4 {
-      margin: 0;
-      font-size: 2rem;
-      padding: 0.5rem;
+  @media ( min-width: 30em ) {
+    .c {
+      max-width: 80vmax;
       position: absolute;
-      top: 2rem;
-      color:  white;
+      top: 50%;
+      transform: translateY( -50% );
     }
+  }
 
-    h4::first-line {
-      background-color: white;
-      color: black;
-    }
+  @media ( max-width: 30em ) {
+    .hero { font-size: 3.5rem; }
+    .sub-hero { font-size: 2rem; }
+    .foreword { font-size: 1rem; }
+  }
 
-    em{
-      background-color: black;
-      color: white;
-      padding: 0.2rem 0.7rem;
-      margin: 20px -10px;
-      font-size: 0.7rem;
-      font-style: normal;
-      font-weight: 400;
-      line-height: 1.5;
-      position: absolute;
-      z-index: 10;
-    }
 
-    span.image {
-      display:  block;
-      width:  100%;
-      height:  13rem;
-      object-fit: cover;
-      vertical-align: bottom;
-
-      background-color:  #F44336;
-      -webkit-background-blend-mode: multiply;
-      background-blend-mode: multiply;
-      background-size:  cover;
-    }
-
-    time {
-      font-size: 0.6rem;
-      opacity: 1;
-      font-weight: 700;
-      position: absolute;
-      top: 0;
-      right:  0;
-      background: black;
-      color: white;
-      padding: 0.2rem 0.5rem;
-    }
   </style>
 
 </head>
 <body>
-
-  <h1>No future in <strong>Art</strong></h1>
-
-  <div class="plain">
-
-    <p class="opening">Or so it would seem, as the years roll by, we find ourselves in the very situation that they were in</p>
-
-    <div class="flex">
-
-      <!-- -->
-      <div class="article">
-        <em>Art</em>
-        <span class="image" style="background-image:url('https://unsplash.it/300/400?random&r=1')"></span>
-        <h4>A mysterious title</h4>
-        <time>30.Jan.2017</time>
-      </div>
-
-      <!-- -->
-      <div class="article">
-        <em>Art</em>
-        <span class="image" style="background-image:url('https://unsplash.it/300/400?random&r=2')"></span>
-        <h4>A mysterious title</h4>
-        <time>30.Jan.2017</time>
-      </div>
-
-      <!-- -->
-      <div class="article">
-        <em>Art</em>
-        <span class="image" style="background-image:url('https://unsplash.it/300/400?random&r=3')"></span>
-        <h4>A mysterious title</h4>
-        <time>30.Jan.2017</time>
-      </div>
-
-      <!-- -->
-      <div class="article">
-        <em>Art</em>
-        <span class="image" style="background-image:url('https://unsplash.it/300/400?random&r=4')"></span>
-        <h4>A mysterious title</h4>
-        <time>30.Jan.2017</time>
-      </div>
-
-      <!-- -->
-      <div class="article">
-        <em>Art</em>
-        <span class="image" style="background-image:url('https://unsplash.it/300/400?random&r=5')"></span>
-        <h4>A mysterious title</h4>
-        <time>30.Jan.2017</time>
-      </div>
-
-      <!-- -->
-      <div class="article">
-        <em>Art</em>
-        <span class="image" style="background-image:url('https://unsplash.it/300/400?random&r=6')"></span>
-        <h4>A mysterious title</h4>
-        <time>30.Jan.2017</time>
-      </div>
-
-      <!-- -->
-      <div class="article">
-        <em>Art</em>
-        <span class="image" style="background-image:url('https://unsplash.it/300/400?random&r=4')"></span>
-        <h4>A mysterious title</h4>
-        <time>30.Jan.2017</time>
-      </div>
-
-      <!-- -->
-      <div class="article">
-        <em>Art</em>
-        <span class="image" style="background-image:url('https://unsplash.it/300/400?random&r=5')"></span>
-        <h4>A mysterious title</h4>
-        <time>30.Jan.2017</time>
-      </div>
-
-      <!-- -->
-      <div class="article">
-        <em>Art</em>
-        <span class="image" style="background-image:url('https://unsplash.it/300/400?random&r=6')"></span>
-        <h4>A mysterious title</h4>
-        <time>30.Jan.2017</time>
-      </div>
-
-      <!-- -->
-      <div class="article">
-        <em>Art</em>
-        <span class="image" style="background-image:url('https://unsplash.it/300/400?random&r=4')"></span>
-        <h4>A mysterious title</h4>
-        <time>30.Jan.2017</time>
-      </div>
-
-      <!-- -->
-      <div class="article">
-        <em>Art</em>
-        <span class="image" style="background-image:url('https://unsplash.it/300/400?random&r=5')"></span>
-        <h4>A mysterious title</h4>
-        <time>30.Jan.2017</time>
-      </div>
-
-      <!-- -->
-      <div class="article">
-        <em>Art</em>
-        <span class="image" style="background-image:url('https://unsplash.it/300/400?random&r=6')"></span>
-        <h4>A mysterious title</h4>
-        <time>30.Jan.2017</time>
-      </div>
-
-      <!-- -->
-      <div class="article">
-        <em>Art</em>
-        <span class="image" style="background-image:url('https://unsplash.it/300/400?random&r=4')"></span>
-        <h4>A mysterious title</h4>
-        <time>30.Jan.2017</time>
-      </div>
-
-      <!-- -->
-      <div class="article">
-        <em>Art</em>
-        <span class="image" style="background-image:url('https://unsplash.it/300/400?random&r=5')"></span>
-        <h4>A mysterious title</h4>
-        <time>30.Jan.2017</time>
-      </div>
-
-      <!-- -->
-      <div class="article">
-        <em>Art</em>
-        <span class="image" style="background-image:url('https://unsplash.it/300/400?random&r=6')"></span>
-        <h4>A mysterious title</h4>
-        <time>30.Jan.2017</time>
-      </div>
-
-      <!-- -->
-      <div class="article">
-        <em>Art</em>
-        <span class="image" style="background-image:url('https://unsplash.it/300/400?random&r=7')"></span>
-        <h4>A mysterious title</h4>
-        <time>30.Jan.2017</time>
-      </div>
-
-    </div>
+  <div class="c">
+    <h1 class="hero">No Future In</h1>
+    <h2 class="sub-hero">An incredibly small game studio.</h2>
+    <p class="foreword">Not even the people who work here know that they work here. It's almost bordering on creepy. We're talking snapchat's new map feature style. We just find developers and follow their moves, replicate what they do and taaa—ddaaaaaa.</p>
   </div>
 </body>
